@@ -1,0 +1,21 @@
+[project]
+name = "chinep"
+version = "0.1.0"
+description = "Convert images to PDF centered on A4"
+readme = "README.md"
+authors = [
+    { name = "Hoai-Nam NGUYEN", email = "hoai.nam-nguyen@voltalis.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "reportlab",
+    "Pillow",
+    "typer",
+]
+
+[project.scripts]
+chinep = "chinep.main:app"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
